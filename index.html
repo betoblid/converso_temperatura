@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Herbert souza">
+    <meta name="robots" content="index">
+    <meta name="description" content="site para converção de temperatura de celsius para fahrenheit e celsius para Kelvin para mas converções mande mensagem ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converso de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Temperaturas</h1>
+        <p>Use o slider da escalar de graus Celsius para converte automaticamente.</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <!--temperatura de celsius -->
+            <div class="card">
+                <p>Celsius <input type="number" name="celsius" value="0" id="cxcelsius" max="100" min="-273" step="0.01" disabled>*C</p>
+                <p>-50.00<input type="range" name="celsiusrange" id="celsiusrange" min="-50">100.00</p>
+            </div>
+            <!--Temperatura do Fahrenheit -->
+            <div class="card">
+                <p>Fahrenheit 
+                <input type="number" name="cxfahrenheit" value="32" id="cxfahrenheit" max="212.00" min="-58" step="0.01" disabled>
+                *F</p>
+
+                <p>-58.00<input type="range" name="rangefahren" id="rangefahren" max="212.00" min="-58.00">212.00</p>
+            </div>
+            <!--Temperatura de Kelvin -->
+            <div class="card">
+                <p>Kelvin <input type="number" name="cxkelvin" value="0" id="cxkelvin" max="373.15" min="0.00" step="0.01" disabled> K</p>
+
+                <p>223.14 <input type="range" name="rangeKelvin" id="rangekelvin" min="223.14" max="373.15">373.15</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; - Desenvolvido por 'Herbert Souza'</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
